@@ -53,7 +53,7 @@ csvURL = "";
 https://docs.google.com/forms/d/e/1FAIpQLSd4zHHYPpIE7eQPEr4AI8rSYFZiDHuxb-8a54ACYb-0KVBBnw/viewform?pli=1
 ```
 
-> **Note:** The Google Forms response data is currently publicly accessible.
+> **Note:** The Google Forms response data is publicly viewable.
 
 ### MQTT Configuration
 
