@@ -1,20 +1,44 @@
 # REDOL
 
-%%%%%%%%%%%%%%%%%%%%%%%
+## Running the Program
 
-# Run the main.m
+Run `main.m` in MATLAB.
 
-# You can change following varibales 
-\\
-# numVehicles = total number of operating vehicles 
-# gps.lat   = 65.61640568720362;         %%% latitude of base station
-# gps.lon  =  22.139036710109025;         %%% longitude of base station
-# csvURL =  link to the read google form data. 
-%%%%%%%%%% Currently the google form data is open to view for all.  %%%% 
+## Configuration
 
-mqClient = define the MQTT details and log in credentials
+You can modify the following variables in `main.m`:
 
+```matlab
+numVehicles = 1;  % Total number of operating vehicles
 
-# if you want to disply the instructions in spanish, other wise set to zero.
-%%% Default  language in display is English. %%%%
-# spanish = 1 ;
+gps.lat = 65.61640568720362;   % Latitude of the base station
+gps.lon = 22.139036710109025;  % Longitude of the base station
+
+csvURL = "";  % URL used to read the Google Forms response data
+```
+
+> **Note:** The Google Forms response data is currently publicly accessible.
+
+Configure `mqClient` with the MQTT broker details and login credentials:
+
+```matlab
+mqClient = ...;
+```
+
+For security, do not commit passwords, API keys, or other sensitive credentials to the GitHub repository.
+
+## Display Language
+
+English is the default display language.
+
+To display the instructions in Spanish, set:
+
+```matlab
+spanish = 1;
+```
+
+To use English, set:
+
+```matlab
+spanish = 0;
+```
